@@ -61,7 +61,7 @@ HashMap * createMap(long capacity) {
       mapaHash->buckets[k] = NULL;
     }
 
-  
+  mapaHash->size = 0;
   mapaHash->capacity = 10;
   mapaHash->current = -1;
   
