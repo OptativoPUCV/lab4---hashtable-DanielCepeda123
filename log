@@ -125,3 +125,14 @@ hashmap.c:45:9: error: unused variable ‘parInsertar’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 d93a226
+Fri 30 Jun 2023 11:41:10 PM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:47:16: error: ‘current’ undeclared (first use in this function)
+   47 |   map->buckets[current] = parInsertar;
+      |                ^~~~~~~
+hashmap.c:47:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+62af9a2
