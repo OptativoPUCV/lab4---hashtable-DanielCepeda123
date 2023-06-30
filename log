@@ -62,3 +62,9 @@ Fri 30 Jun 2023 11:01:23 PM UTC:
  tests:  0|6
 total_score: 0/70
 15dd09a
+Fri 30 Jun 2023 11:02:06 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+89b0275
