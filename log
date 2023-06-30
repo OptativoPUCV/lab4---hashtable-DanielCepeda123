@@ -68,3 +68,26 @@ Fri 30 Jun 2023 11:02:06 PM UTC:
  tests:  1|5
 total_score: 10/70
 89b0275
+Fri 30 Jun 2023 11:22:12 PM UTC: 
+ hashmap.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:3: error: unknown type name ‘pair’; did you mean ‘Pair’?
+   45 |   pair* parInsertar = createPair(key, value);
+      |   ^~~~
+      |   Pair
+hashmap.c:45:23: error: initialization of ‘int *’ from incompatible pointer type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   45 |   pair* parInsertar = createPair(key, value);
+      |                       ^~~~~~~~~~
+hashmap.c:48:30: error: ‘NUll’ undeclared (first use in this function); did you mean ‘NULL’?
+   48 |     while(map->buckets[k] != NUll || map->buckets[k]->key != NULL){
+      |                              ^~~~
+      |                              NULL
+hashmap.c:48:30: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:53:37: error: assignment to ‘Pair *’ from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+   53 |     map->buckets[posicionNuevoDato] = parInsertar;
+      |                                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+6097859
