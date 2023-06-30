@@ -50,3 +50,9 @@ hashmap.c:58:23: error: expected expression before ‘{’ token
       |                       ^
 Compilation failed
 59cc04c
+Fri 30 Jun 2023 10:58:58 PM UTC: 
+ hashmap.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+caac9c6
