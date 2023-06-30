@@ -91,3 +91,21 @@ hashmap.c:53:37: error: assignment to ‘Pair *’ from incompatible pointer typ
 cc1: all warnings being treated as errors
 Compilation failed
 6097859
+Fri 30 Jun 2023 11:22:24 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:3: error: unknown type name ‘pair’; did you mean ‘Pair’?
+   45 |   pair* parInsertar = createPair(key, value);
+      |   ^~~~
+      |   Pair
+hashmap.c:45:23: error: initialization of ‘int *’ from incompatible pointer type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   45 |   pair* parInsertar = createPair(key, value);
+      |                       ^~~~~~~~~~
+hashmap.c:53:37: error: assignment to ‘Pair *’ from incompatible pointer type ‘int *’ [-Werror=incompatible-pointer-types]
+   53 |     map->buckets[posicionNuevoDato] = parInsertar;
+      |                                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+665a80c
