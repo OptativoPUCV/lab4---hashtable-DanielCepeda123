@@ -29,6 +29,7 @@ long hash( char * key, long capacity) {
     for (ptr = key; *ptr != '\0'; ptr++) {
         hash += hash*32 + tolower(*ptr);
     }
+  printf(" Hash es %ld", hash);
     return hash%capacity;
 }
 
