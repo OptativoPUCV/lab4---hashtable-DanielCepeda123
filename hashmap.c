@@ -46,7 +46,7 @@ void insertMap(HashMap * map, char * key, void * value) {
   map->current = posicionNuevoDato;
   
   
-  if(map->buckets[map->current] != NULL){
+  if(map->buckets[map->current] != NULL || map->buckets[map->current]->key != NULL){
       map->current++;
   }
 
