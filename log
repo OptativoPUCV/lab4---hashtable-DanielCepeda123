@@ -207,3 +207,25 @@ Sat 01 Jul 2023 12:30:32 AM UTC:
  tests:  1|5
 total_score: 10/70
 2d51aee
+Sat 01 Jul 2023 01:00:34 AM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Werror=format=]
+   45 |   printf("%d", posicionNuevoDato):
+      |           ~^   ~~~~~~~~~~~~~~~~~
+      |            |   |
+      |            int long int
+      |           %ld
+hashmap.c:45:34: error: expected ‘;’ before ‘:’ token
+   45 |   printf("%d", posicionNuevoDato):
+      |                                  ^
+      |                                  ;
+hashmap.c:57:32: error: ‘parInsertar’ undeclared (first use in this function)
+   57 |   map->buckets[map->current] = parInsertar;
+      |                                ^~~~~~~~~~~
+hashmap.c:57:32: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+37676df
