@@ -229,3 +229,18 @@ hashmap.c:57:32: note: each undeclared identifier is reported only once for each
 cc1: all warnings being treated as errors
 Compilation failed
 37676df
+Sat 01 Jul 2023 01:00:40 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:45:35: error: expected ‘;’ before ‘:’ token
+   45 |   printf("%ld", posicionNuevoDato):
+      |                                   ^
+      |                                   ;
+hashmap.c:57:32: error: ‘parInsertar’ undeclared (first use in this function)
+   57 |   map->buckets[map->current] = parInsertar;
+      |                                ^~~~~~~~~~~
+hashmap.c:57:32: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+14e48d5
