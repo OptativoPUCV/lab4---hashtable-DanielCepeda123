@@ -46,11 +46,14 @@ void insertMap(HashMap * map, char * key, void * value) {
   map->current = posicionNuevoDato;
   
   
-  while(map->buckets[map->current] != NULL || map->buckets[map->current]->key != NULL){
+  while(map->buckets[map->current] != NULL){
+    if(map->buckets[map->current]->key != NULL){
       map->current++;
-    if (map->current >= map->capacity) {
-        map->current = 0;
     }
+    
+      if (map->current >= map->capacity) {
+          map->current = 0;
+      }
   }
 
   map->buckets[map->current] = parInsertar;
