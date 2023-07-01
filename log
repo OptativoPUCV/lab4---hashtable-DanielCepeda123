@@ -195,3 +195,9 @@ test.c:(.text+0x11b0): undefined reference to `enlarge'
 collect2: error: ld returned 1 exit status
 Compilation failed
 b980702
+Sat 01 Jul 2023 12:29:45 AM UTC: 
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld: /tmp/ccVkze4x.o: in function `enlarge_test':
+test.c:(.text+0x11b0): undefined reference to `enlarge'
+collect2: error: ld returned 1 exit status
+Compilation failed
+ea5f2e1
