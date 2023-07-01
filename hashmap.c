@@ -29,8 +29,6 @@ long hash( char * key, long capacity) {
     for (ptr = key; *ptr != '\0'; ptr++) {
         hash += hash*32 + tolower(*ptr);
     }
-  long hash2 = hash % capacity;
-  printf(" Hash es %ld", hash2);
     return hash%capacity;
 }
 
@@ -42,9 +40,7 @@ int is_equal(void* key1, void* key2){
 
 
 void insertMap(HashMap * map, char * key, void * value) {
-  printf("Llave %s a", key); 
   long posicionNuevoDato = hash(value, map->capacity);
-  printf("Posicion nuevo dato %ld", posicionNuevoDato);
   Pair* parInsertar = createPair(key, value);
   map->current = posicionNuevoDato;
   
