@@ -40,7 +40,7 @@ int is_equal(void* key1, void* key2){
 
 
 void insertMap(HashMap * map, char * key, void * value) {
-  printf("%s", key); 
+  printf("Llave %s", key); 
   long posicionNuevoDato = hash(value, map->capacity);
   printf("Posicion nuevo dato %ld", posicionNuevoDato);
   Pair* parInsertar = createPair(key, value);
